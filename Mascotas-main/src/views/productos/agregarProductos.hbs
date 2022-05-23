@@ -1,0 +1,47 @@
+<div class="container p-4">
+    <h2 style="text-align: center;">Agregar Productos</h2>
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form method="POST" autocomplete="off" onsubmit="return validarFormulario()">
+
+                        
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="NOMBREPRODUCTO" name="NOMBREPRODUCTO"
+                                placeholder="Producto" required>
+                            <div id="paterno_error" style="font-size:14px; color:#FF0000;"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="CodigoBarra" name="Categoria"
+                                placeholder="Categoria" required>
+                            <div id="paterno_error" style="font-size:14px; color:#FF0000;"></div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Descripcion" name="subCategoria"
+                                placeholder="Sub Categoria" required>
+                            <div id="materno_error" style="font-size:14px; color:#FF0000;"></div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Gramaje" name="Imagen" placeholder="Imagen"
+                                required>
+                            <div id="materno_error" style="font-size:14px; color:#FF0000;"></div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="PrecioUnitario" name="precio"
+                                placeholder="Precio Unitario" required>
+                            <div id="materno_error" style="font-size:14px; color:#FF0000;"></div>
+                        </div>
+                        
+                        <div class="d-grid 2-gap">
+                            <button class="btn btn-success btn-block">
+                                Agregar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

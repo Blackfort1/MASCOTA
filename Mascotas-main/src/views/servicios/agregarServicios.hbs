@@ -1,0 +1,43 @@
+<div class="container p-4">
+    <h2 style="text-align: center;">Agregar Servicios</h2>
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form method="POST" autocomplete="off" onsubmit="return validarFormulario()" >
+                        
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" autofocus
+                                aria-autocomplete="none" >
+                        </div>
+                      
+                       
+                         <div class="mb-3">
+                            <input type="text" class="form-control" id="tipo_servicio" name="tipo_servicio" placeholder="Tipo servicio" required>
+                            <div id="tel_error" style="font-size:14px; color:#FF0000;"></div>
+                            
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="sub_categoria" placeholder="sub_categoria" required>
+                        </div>
+                         
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="imagen" name="imagen" placeholder="imagen" required>
+                           
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="precio" name="precio" placeholder="Precio" required>
+                           
+                        </div>
+                  
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success">
+                                Agregar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
